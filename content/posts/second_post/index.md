@@ -118,3 +118,4 @@ That means that in Public-Permissioned blockchain networks we must make the same
 However, not all BFT consensus algorithms are equally suitable, as there are several other characteristics, apart from reliability, that are important. In the research literature there are several surveys and detailed analyses of the different types of consensus algorithms for blockchain networks and their properties. See for example [3], [1] or even for specialized fields like IoT [2].
 
 In this document we will focus only on the properties of blockchain consensus algorithms which are most suitable for the type of use cases that will be typically implemented in Public-Permissioned networks.
+
