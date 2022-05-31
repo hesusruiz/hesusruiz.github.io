@@ -1,4 +1,4 @@
-baseURL: https://hesusruiz.github.io/hesusruiz/
+baseURL: https://hesusruiz.github.io/
 languageCode: en-us
 title: Jesus Ruiz
 
@@ -16,3 +16,4 @@ params:
     ShowToc: true
     ShowBreadCrumbs: true
 
+buildDrafts: true

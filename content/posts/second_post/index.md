@@ -1,7 +1,7 @@
 ---
 title: "Consensus algorithms and blockchain governance"
 date: 2022-05-08T17:58:38+02:00
-draft: false
+draft: true
 cover:
     image: ""
     # can also paste direct link from external site
@@ -13,6 +13,7 @@ cover:
 ---
 
 This article analyses the influence of consensus algorithms in the characteristics of governance models of Public-Permissioned blockchain networks, especifically when using Quorum, Besu and Fabric.
+<!--more-->
 
 For many years before the blockchain, consensus algorithms have been used in distributed systems to achieve the desired technical properties of safety and liveness, while improving performance and reducing cost. However, with the advent of the blockchain technology, consensus algorithms are additionally important components of the governance model of the network infrastructure.
 
