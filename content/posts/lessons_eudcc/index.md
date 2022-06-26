@@ -4,8 +4,6 @@ date: 2022-05-12T20:19:00+02:00
 draft: true
 cover:
     image: ""
-    # can also paste direct link from external site
-    # ex. https://i.ibb.co/K0HVPBd/paper-mod-profilemode.png
     alt: "<alt text>"
     caption: "<text>"
     relative: true # To use relative path for cover image, used in hugo Page-bundles
