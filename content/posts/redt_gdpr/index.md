@@ -15,3 +15,4 @@ Alastria RedT is a Public-Permissioned blockchain network. I analyse the network
 # Introduction
 
 Alastria RedT is a Public-Permissioned blockchain network. I analyse the network from the point of view of GDPR.
+
