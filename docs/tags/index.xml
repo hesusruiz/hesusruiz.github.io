@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Jesus Ruiz</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>https://hesusruiz.github.io/tags/</link>
     <description>Recent content in Tags on Jesus Ruiz</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>Copyright &amp;copy; 2023 - Jesus Ruiz</copyright>
     <lastBuildDate>Sun, 15 Jan 2023 09:00:00 -0700</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://hesusruiz.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Red</title>
-      <link>http://localhost:1313/tags/red/</link>
+      <link>https://hesusruiz.github.io/tags/red/</link>
       <pubDate>Sun, 15 Jan 2023 09:00:00 -0700</pubDate>
-      <guid>http://localhost:1313/tags/red/</guid>
+      <guid>https://hesusruiz.github.io/tags/red/</guid>
       <description></description>
     </item>
   </channel>

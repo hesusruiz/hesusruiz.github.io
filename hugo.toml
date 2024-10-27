@@ -1,7 +1,6 @@
-baseurl = "https://hesusruiz.github.io/"
+baseURL = "https://hesusruiz.github.io/"
 title = "Jesus Ruiz"
 copyright = "Copyright &copy; 2023 - Jesus Ruiz"
-canonifyurls = true
 publishDir = "docs"
 theme = "hugo-hesus"
 
