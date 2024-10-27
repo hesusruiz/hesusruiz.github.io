@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>Post with RITE | Jesus Ruiz</title>
+
+    <link rel="stylesheet" href="http://localhost:1313/css/w3.css">
+
+
+      <script src="http://localhost:1313/js/main.js"></script>
+
+
+</head>
+<body>
+  <header>
+    
+
+
+<div class="w3-bar w3-theme w3-left-align w3-large">
+  <a href="http://localhost:1313/" class="w3-bar-item w3-button w3-theme-l1">Jesus Ruiz</a>
+      <a class="w3-bar-item w3-button w3-hide-small w3-hover-white" href="http://localhost:1313/">Home</a>
+      <a class="w3-bar-item w3-button w3-hide-small w3-hover-white" aria-current="true" class="ancestor" href="http://localhost:1313/posts/">Posts</a>
+      <a class="w3-bar-item w3-button w3-hide-small w3-hover-white" href="http://localhost:1313/tags/">Tags</a>
+</div>
+
+
+  </header>
+  <main>
+    
+  <h1>Post with RITE</h1>
+
+  
+  
+  <time datetime="2023-02-15T10:00:00-07:00">February 15, 2023</time>
+
+  <section id='abstract'>
+    <p><code>Proof of Democracy</code> (PoD) is the consensus algorithm used in Alastria RedT and RedB and in the future ISBE (Spanish Blockchain Services Infrastructure).
+    </p>
+    <p>In a classical distributed systems implementation, the technical properties of the consensus algorithm determine the properties of the system as a whole.
+    </p>
+    <p>This is not true in a decentralised system, where the desired properties of the system (trust, decentralisation, inclusivity, fairness, accountability, compliance) are determined by both the technical properties and governance model of the consensus algorithm.
+    </p>
+    <p>We describe here the Proof of Democracy consensus algorithm used since several years in the Alastria RedT blockchain network, and that will be used in the future Spanish blockchain network.
+    </p>
+</section>
+<section id='The properties of the Proof of Democracy consensus algorithm'><h2>1. The properties of the Proof of Democracy consensus algorithm</h2>
+
+    <p>I focus in this document of the consensus algorithm, so I will normally talk about the nodes executing the consensus algorithm, which I call <code>Consensus Nodes</code> to avoid the confusing terminology used normally in the blockchain space, where the names are usually chosen to catch the attention, not to describe in a precise way the thing they are naming.
+    </p>
+    <section id='Participation'><h2>1.1. Participation</h2>
+
+        <p>Anybody can participate in the operation of the network <a href="#bib_RFC7515" class="xref">[RFC7515]</a>, subject to a set of rules which are transparent, fair and inclusive.
+        </p>
+        <p>There is not any formal contract that entities have to sign with some organisation in order to operate a Consensus node and participate in the execution of the consensus algorithm.
+        </p>
+        <p>But they have to accept to abide to the public Operational Rules for Consensus Nodes, which means that they self-declare things like their compromise to comply with the EU regulatory framework, to make their best efforts in maintaining their nodes 24x7x365, and to collaborate with the operators of the other Consensus Nodes to keep the network functioning.
+        </p>
+        <p>It is important that identities of the Consensus Nodes are public, including the real-world identities of the organisations operating them. This helps with a lot of things, like transparency, accountability, incentives, etc. More on this later.
+        </p>
+    </section>
+    <section id='Rule of law'><h2>1.2. Rule of law</h2>
+
+        <p>The Consensus Nodes have to comply with the EU legal framework. We are aiming to build a blockchain infrastructure as a Coomon Good, so there is no way around full compliance.
+        </p>
+        <p>In particular, it is forbidden by the Operational Rules mentioned above to store in the blockchain any type of personal data. This means that:
+        </p>
+        <li>It is forbidden to store any form of digital identity of a natural person (whether a DID or any other type of identification)
+        </li>
+        <li>It is forbidden to store encrypted personal data (it is still considered personal data).
+        </li>
+        <li>It is forbidden to store a hash of personal data if it could be used, combined with other information on-chain or off-chain, to identify a natural person. Only after a formal PIA (Privacy Impact Assessment) could an organisation store a hash derived from personal information.
+        </li>
+        <li>It is forbidden to use Tokens or NFTs that have personal information inside it. Most of the use cases that I have seen in public blockchain networks are simply violating the GDPR.
+        </li>
+        <p>Those prohibitions may seem too restrictive, but they are not. Actually, I have never seen any application useful to improve society and the lives of citizens that requires to store personal data in a public registry (blockchain or not). The only reasons for doing that are the laziness or ignorance of the developers, or just the lack of interest in protecting the citizens because the economic factors are considered more important.
+        </p>
+        <p>Those behaviours are against democratic values and are not accepted in our network, and the offenders are subject to their expulsion (via voting, as explained later).
+        </p>
+    </section>
+    <section id='Transparency'><h2>1.3. Transparency</h2>
+
+        <p>Transparency means that decisions taken and their enforcement are done in a manner that follows rules and regulations. It also means that information is freely available and directly accessible to those who will be affected by such decisions and their enforcement. It also means that enough information is provided and that it is provided in easily understandable forms and media.
+        </p>
+    </section>
+</section>
+<section id='The technical properties of the consensus algorithm'><h2>2. The technical properties of the consensus algorithm</h2>
+
+    <p>The blockchain <x-ref "caca"> technology is the Ethereum-compatible <a href="https://consensys.net/quorum/developers/">Hyperledger Besu and GoQuorum</a> blockchain clients which implement a technical consensus algorithm based on a variant of <a href="#bib_JAdES" class="xref">[JAdES]</a>.
+    </p>
+    <p>If you are an expert on distributed systems you can skip this section, but otherwise I recommend you to continue with me. There is a very high probability that you do not really know how the blockchain works, because most of the descriptions out there are from ignorant people who try to be cool by "explaining" how blockchain technology works.
+    </p>
+    <p>To be clear, I will use Ethereum as the blockchain technology for the explanations. There are currently several different technologies and they may or may not work like Ethereum. Some of them are very similar in nature, but there is not guarantee that my explanations apply to all of them.
+    </p>
+    <p>In addition, most of the description below applies to PoW, PoS and PoD consensus algorithms. I will explicitly mention it when I talk about one specific consensus technology.
+    </p>
+    <section id='The two types of nodes'><h2>2.1. The two types of nodes</h2>
+
+        <p>In a network there are two types of nodes:
+        </p>
+        <p>1. The nodes that just participate in the network to support applications that read and write to the blockchain. We will call them <code>Regular</code> nodes.
+        </p>
+        <p>2. The nodes that execute the consensus algorithm, which I call <code>Consensus</code> nodes. I use this term because there are different names in use in the blockchain space, and like many things in the blockchain space the names are intended to catch the attention of the reader, more than try to fit the actual function of the nodes. Even Consensys (the developers of the blockchain technology used here) call them Validators, when they do not really validate anything, at least from the point of the Regular nodes.
+        </p>
+        <p>Most of the nodes are <code>Regular</code> and they can just come and go, be turned on or off by their owners. They can not affect the operation of the network if they are offline. The only thing that may be impacted is the application of the organisation that uses that node to connect to the network. In other words, reliability of a Regular node only affects the owner of that node and to the applications (off-chain) that depend on that node.
+        </p>
+        <p>The <code>Consensus</code> nodes on the other hand are critical for the functioning of the network
+        </p>
+    </section>
+</section>
+
+<section id='References'><h2>References</h2>
+<dl>
+<dt  id='bib_RFC7515'>[RFC7515]</dt>
+<dd>
+<a href='https://www.rfc-editor.org/rfc/rfc7515'>JSON Web Signature (JWS)</a>. URL: <a href='https://www.rfc-editor.org/rfc/rfc7515'>https://www.rfc-editor.org/rfc/rfc7515</a>. </dd>
+<dt  id='bib_JAdES'>[JAdES]</dt>
+<dd>
+<a href='https://www.etsi.org/deliver/etsi_ts/119100_119199/11918201/01.01.01_60/ts_11918201v010101p.pdf'>ETSI TS 119 182-1 V1.1.1 (2021-03) - Electronic Signatures and Infrastructures (ESI); JAdES digital signatures; Part 1: Building blocks and JAdES baseline signatures</a>. Date: 2021-03. URL: <a href='https://www.etsi.org/deliver/etsi_ts/119100_119199/11918201/01.01.01_60/ts_11918201v010101p.pdf'>https://www.etsi.org/deliver/etsi_ts/119100_119199/11918201/01.01.01_60/ts_11918201v010101p.pdf</a>. </dd>
+</dl>
+</section>
+
+  
+
+
+  </main>
+  <footer>
+    <p class="w3-small">Copyright © 2023 Jesus Ruiz. Text is available under the
+   <a rel="license" href="https://creativecommons.org/licenses/by/4.0/legalcode">
+   Creative Commons Attribution 4.0 International Public License</a>
+</p>
+  </footer>
+</body>
+</html>
