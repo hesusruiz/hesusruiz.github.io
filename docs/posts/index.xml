@@ -2,32 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Jesus Ruiz</title>
-    <link>https://hesusruiz.github.io/posts/</link>
+    <link>http://localhost:1313/posts/</link>
     <description>Recent content in Posts on Jesus Ruiz</description>
     <generator>Hugo</generator>
     <language>en</language>
     <copyright>Copyright &amp;copy; 2023 - Jesus Ruiz</copyright>
     <lastBuildDate>Sat, 26 Oct 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://hesusruiz.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Proof Of Democracy (PoD): the Consensus Algorithm used in Alastria RedT</title>
-      <link>https://hesusruiz.github.io/posts/post-3/</link>
+      <link>http://localhost:1313/posts/post-3/</link>
       <pubDate>Sat, 26 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>https://hesusruiz.github.io/posts/post-3/</guid>
+      <guid>http://localhost:1313/posts/post-3/</guid>
       <description>&lt;p&gt;&lt;code&gt;Proof of Democracy&lt;/code&gt; (PoD) is the consensus algorithm used in Alastria RedT and RedB and in the future ISBE (Spanish Blockchain Services Infrastructure).&lt;/p&gt;&#xA;&lt;p&gt;In a classical distributed systems implementation, the technical properties of the consensus algorithm determine the properties of the system as a whole.&lt;/p&gt;&#xA;&lt;p&gt;This is not true in a decentralised system, where the desired properties of the system (trust, decentralisation, inclusivity, fairness, accountability, compliance) are determined by both the technical properties and governance model of the consensus algorithm.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Post with RITE</title>
-      <link>https://hesusruiz.github.io/posts/post-2/</link>
+      <link>http://localhost:1313/posts/post-2/</link>
       <pubDate>Wed, 15 Feb 2023 10:00:00 -0700</pubDate>
-      <guid>https://hesusruiz.github.io/posts/post-2/</guid>
+      <guid>http://localhost:1313/posts/post-2/</guid>
       <description>&lt;section id=&#39;abstract&#39;&gt;&#xA;    &lt;p&gt;&lt;code&gt;Proof of Democracy&lt;/code&gt; (PoD) is the consensus algorithm used in Alastria RedT and RedB and in the future ISBE (Spanish Blockchain Services Infrastructure).&#xA;    &lt;/p&gt;&#xA;    &lt;p&gt;In a classical distributed systems implementation, the technical properties of the consensus algorithm determine the properties of the system as a whole.&#xA;    &lt;/p&gt;&#xA;    &lt;p&gt;This is not true in a decentralised system, where the desired properties of the system (trust, decentralisation, inclusivity, fairness, accountability, compliance) are determined by both the technical properties and governance model of the consensus algorithm.&#xA;    &lt;/p&gt;</description>
     </item>
     <item>
       <title>Post 1</title>
-      <link>https://hesusruiz.github.io/posts/post-1/</link>
+      <link>http://localhost:1313/posts/post-1/</link>
       <pubDate>Sun, 15 Jan 2023 09:00:00 -0700</pubDate>
-      <guid>https://hesusruiz.github.io/posts/post-1/</guid>
+      <guid>http://localhost:1313/posts/post-1/</guid>
       <description>&lt;p&gt;Tempor proident minim aliquip reprehenderit dolor et ad anim Lorem duis sint eiusmod. Labore ut ea duis dolor. Incididunt consectetur proident qui occaecat incididunt do nisi Lorem. Tempor do laborum elit laboris excepteur eiusmod do. Eiusmod nisi excepteur ut amet pariatur adipisicing Lorem.&lt;/p&gt;&#xA;&lt;p&gt;Occaecat nulla excepteur dolore excepteur duis eiusmod ullamco officia anim in voluptate ea occaecat officia. Cillum sint esse velit ea officia minim fugiat. Elit ea esse id aliquip pariatur cupidatat id duis minim incididunt ea ea. Anim ut duis sunt nisi. Culpa cillum sit voluptate voluptate eiusmod dolor. Enim nisi Lorem ipsum irure est excepteur voluptate eu in enim nisi. Nostrud ipsum Lorem anim sint labore consequat do.&lt;/p&gt;</description>
     </item>
   </channel>
